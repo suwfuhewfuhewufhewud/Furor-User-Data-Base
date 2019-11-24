@@ -1,14 +1,21 @@
-if (message.content.startsWith("a!link")) {
-    if (!message.member.roles.some(r => ["- | Noted Customer"].includes(r.name)))
+```if (message.content.startsWith("a!link")) {
+    if (!message.member.roles.some(r => ["Beta Tester"].includes(r.name)))
       return message.reply("Sorry, you don't have permissions to use this!");
 
     let username = args.slice(1).join("");
     let uid = message.author.id;
 
     message.channel.send("Working, please wait.").then(msg => {
+      // make request to api and get link code
+      let url = "https://verify.eryn.io/api/user/";
+      request(url, (err, resp, body) => {
+        if (!err && (resp.statusCode == 302 || resp.statusCode == 200)) {
+          let j = JSON.parse(body);
+          if (!j["ok"])
+            return msg.edit("Did you pass your username as an argument? e.g a!link USERNAME");
           if (j["isLinked"]) {
             msg.edit("Your Discord account is already linked to AppX!");
-          else
+          } else {
             msg.edit(
               "I am going to DM you a list of instructions on how to link your account!"
             );
@@ -33,10 +40,4 @@ if (message.content.startsWith("a!link")) {
         }
       });
     });
-  }
-
-module.exports.help = {
-
-  name: "link"
-
-}
+  }```
