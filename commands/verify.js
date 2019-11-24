@@ -1,4 +1,4 @@
-```if (message.content.startsWith("a!link")) {
+if (message.content.startsWith("a!link")) {
     if (!message.member.roles.some(r => ["Beta Tester"].includes(r.name)))
       return message.reply("Sorry, you don't have permissions to use this!");
 
@@ -40,4 +40,4 @@
         }
       });
     });
-  }```
+  }
