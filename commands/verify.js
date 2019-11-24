@@ -8,7 +8,7 @@ if (message.content.startsWith("a!link")) {
     message.channel.send("Working, please wait.").then(msg => {
           if (j["isLinked"]) {
             msg.edit("Your Discord account is already linked to AppX!");
-          else {
+          else
             msg.edit(
               "I am going to DM you a list of instructions on how to link your account!"
             );
