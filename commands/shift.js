@@ -24,8 +24,8 @@ module.exports.run = async (bot, message, args) => {
       return;
 
     }
-
-
+    let rreason = args.join(" ").slice(0);
+    if(!rreason) return errors.noReason(message.channel);
 
     let reportEmbed = new Discord.RichEmbed()
 
@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, args) => {
 
     .setDescription("There is a shift scheduled, and we'd like you to join us! Another announcement will be made when the shift has commenced;")
 
-    .addField("**SCHEDULED AT**", message.createdAt)
+    .addField("**SCHEDULED AT**", rreason)
 
     .addField("**HOST**", message.author)
 
