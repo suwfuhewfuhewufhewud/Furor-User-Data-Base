@@ -45,10 +45,7 @@ const errors = require("../utils/errors.js");
         } else {
           msg.edit("Unable to make request to AppX API!");
           console.log(resp.statusCode);
-        }
-      });
-    });
-  }
+    }
 
 module.exports.help = {
 
