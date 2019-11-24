@@ -36,6 +36,8 @@ module.exports.run = async (bot, message, args) => {
 
      message.channel.send(reportEmbed);
 
+} 
+
 module.exports.help = {
 
   name: "commenced"
