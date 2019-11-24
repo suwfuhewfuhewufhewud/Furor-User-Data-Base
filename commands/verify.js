@@ -1,6 +1,14 @@
-if (message.content.startsWith("a!link")) {
-    if (!message.member.roles.some(r => ["- | Noted Customer"].includes(r.name)))
-      return message.reply("Sorry, you don't have permissions to use this!");
+const Discord = require("discord.js");
+
+const botconfig = require("../botconfig.json");
+
+const red = botconfig.red;
+
+const green = botconfig.green;
+
+const orange = botconfig.orange;
+
+const errors = require("../utils/errors.js");
 
     let username = args.slice(1).join("");
     let uid = message.author.id;
