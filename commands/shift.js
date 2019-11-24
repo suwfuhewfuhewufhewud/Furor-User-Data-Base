@@ -43,11 +43,7 @@ module.exports.run = async (bot, message, args) => {
 
 
 
-    let reportschannel = message.guild.channels.find(`name`, "session-notifications");
-
-    if(!reportschannel) return message.channel.send("Couldn't find sessions channel.");
-
-    reportschannel.send(reportEmbed);
+     message.channel.send(reportEmbed);
 
 
 
