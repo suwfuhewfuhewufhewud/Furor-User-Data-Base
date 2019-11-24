@@ -42,7 +42,7 @@ module.exports = {
 
             .setFooter(message.guild.name, message.guild.iconURL)
 
-            .addField(`**Group Link** ${args.slice(1).join(" ")}`);
+            .addField("**Group Link**", `${args.slice(1).join(" ")}`);
 
 
 
@@ -54,6 +54,6 @@ module.exports = {
 
 module.exports.help = {
 
-    name: "alliance"
+    name: "commenced"
   
   }
