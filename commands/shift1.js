@@ -29,16 +29,11 @@ module.exports.run = async (bot, message, args) => {
 
     let reportEmbed = new Discord.RichEmbed()
 
-    .setTitle("A SHIFT HAS NOW COMMENCED!")
+    .setTitle("ERROR")
 
     .setColor()
 
-    .setDescription("There is a shift whitch recently commanced! Feel free to join the cafe with some of your friends and enjoy a refreshing Boba Tea with the rest of our community!")
-
-    .addField("**HOST**", message.author)
-
-    .addField("**STATUS**", "Open");
-
+    .setDescription("AN Error has occured! Please contact JordanStrunk!")
 
 
      message.channel.send(reportEmbed);
