@@ -53,4 +53,3 @@ module.exports.help = {
   name: "tcommenced"
 
 }
-© 2019 GitHub, Inc.
