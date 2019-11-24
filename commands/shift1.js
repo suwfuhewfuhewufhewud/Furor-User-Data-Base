@@ -35,8 +35,6 @@ module.exports.run = async (bot, message, args) => {
 
     .setDescription("There is a shift whitch recently commanced! Feel free to join the cafe with some of your friends and enjoy a refreshing Boba Tea with the rest of our community!")
 
-    .addField("**SCHEDULED AT**", message.createdAt)
-
     .addField("**HOST**", message.author)
 
     .addField("**STATUS**", "Open");
