@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
     if(kUser.hasPermission("MANAGE_MESSAGES")) return errors.equalPerms(message, kUser, "MANAGE_MESSAGES");
 
     let kickEmbed = new Discord.RichEmbed()
-    .setTitile("User Kicked")
+    .setTitle("User Kicked")
     .setColor()
     .addField("Kicked User", `${kUser}`)
     .addField("Kicked By", `<@${message.author.id}>`)
