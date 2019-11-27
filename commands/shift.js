@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
 
     .setColor()
 
-    .setDescription("There is a shift scheduled, and we'd like you to join us! Another announcement will be made when the shift has commenced;")
+    .setDescription("There is a shift whitch recently commanced! Feel free to join the Bakery with some of your friends and enjoy a Cupcake with the rest of our community!")
 
     .addField("**SCHEDULED AT**", rreason)
 
