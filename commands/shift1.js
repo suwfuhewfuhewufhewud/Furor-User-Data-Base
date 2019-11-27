@@ -28,7 +28,7 @@ module.exports.run = async (bot, message, args) => {
     .setTitle("A SHIFT HAS NOW COMMENCED!")
 
     .setColor()
-    .setDescription("There is a shift whitch recently commanced! Feel free to join the cafe with some of your friends and enjoy a refreshing Boba Tea with the rest of our community!")
+    .setDescription("There is a shift whitch recently commanced! Feel free to join the Bakery with some of your friends and enjoy a Cupake with the rest of our community!")
 
     .addField("**HOST**", message.author)
 
