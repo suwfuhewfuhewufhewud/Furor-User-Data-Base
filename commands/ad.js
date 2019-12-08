@@ -41,6 +41,8 @@ module.exports.run = async (bot, message, args) => {
 
 
       let reportschannel = message.guild.channels.find(`name`, "logs");
+    if(!reportschannel) return message.channel.send("Couldn't find reports channel.");
+    reportschannel.send(botmessage);
 
 
 
