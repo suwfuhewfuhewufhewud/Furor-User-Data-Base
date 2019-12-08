@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
 
     .setTitle("ADVERTISEMENT DECLINED")
     
-    .setDescription("rreason");
+    ..addField("Reason", rreason);
 
 
 
