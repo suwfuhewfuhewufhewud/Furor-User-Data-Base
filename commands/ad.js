@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
 
     .addField("**USER**", message.author)
 
-    .addField("**DESCRIPTION**", rreason)
+    .addField("**DESCRIPTION**", rreason);
 
 
 
