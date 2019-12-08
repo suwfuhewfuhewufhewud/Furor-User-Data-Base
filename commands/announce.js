@@ -23,18 +23,16 @@ module.exports.run = async (bot, message, args) => {
       return;
 
     }
+    let rreason = args.join(" ").slice(0);
+    if(!rreason) return errors.noReason(message.channel);
 
 
 
     let reportEmbed = new Discord.RichEmbed()
 
-    .setTitle("ALLIANCE ANNOUNCEMENT")
-
     .setColor()
 
-    .setDescription("Hello everyone! Our fellow Alliance Fruor is having their Grand Opening! Please join via the link down below!")
-
-    .addField("**LINK**", "https://web.roblox.com/games/1061414636/Fruor-Cafe-V-1");
+    .addField(rreason)
 
 
 
@@ -48,6 +46,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
 
-  name: "fruor"
+  name: "accept"
 
 }
