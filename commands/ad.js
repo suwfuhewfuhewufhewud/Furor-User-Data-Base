@@ -23,6 +23,8 @@ module.exports.run = async (bot, message, args) => {
       return;
 
     }
+    let rreason = args.join(" ").slice(0);
+    if(!rreason) return errors.noReason(message.channel);
 
 
 
@@ -34,7 +36,9 @@ module.exports.run = async (bot, message, args) => {
 
     .addField("**USER**", message.author)
 
-    .addField("**ADVERTISEMENT DESCRIPTION**", rreason);
+    .addField("**DESCRIPTION**", rreason)
+    
+    .setFooter("Please say ,accept or ,decline")
 
 
 
