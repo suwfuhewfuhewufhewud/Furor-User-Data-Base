@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
 
     .setColor()
 
-    .addField(rreason)
+    .addField(rreason);
 
 
 
