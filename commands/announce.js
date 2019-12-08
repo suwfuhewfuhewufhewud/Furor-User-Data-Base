@@ -23,6 +23,8 @@ module.exports.run = async (bot, message, args) => {
       return;
 
     }
+  let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+  if(!rUser) return message.channel.send("Couldn't find user.");
     let rreason = args.join(" ").slice(0);
     if(!rreason) return errors.noReason(message.channel);
 
@@ -31,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
     let reportEmbed = new Discord.RichEmbed()
 
     .setColor()
-
+    .addField("Author", `${rUser}`)
     .addField("Description", rreason);
 
 
