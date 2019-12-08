@@ -40,7 +40,7 @@ module.exports.run = async (bot, message, args) => {
 
 
 
-     message.channel.send(reportEmbed);
+      let reportschannel = message.guild.channels.find(`name`, "logs");
 
 
 
