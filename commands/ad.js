@@ -37,8 +37,6 @@ module.exports.run = async (bot, message, args) => {
     .addField("**USER**", message.author)
 
     .addField("**DESCRIPTION**", rreason)
-    
-    .setFooter("Please say ,accept or ,decline")
 
 
 
