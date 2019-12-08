@@ -28,15 +28,13 @@ module.exports.run = async (bot, message, args) => {
 
     let reportEmbed = new Discord.RichEmbed()
 
-    .setTitle("A GRP SESSION HAS COMMENCED!")
+    .setTitle("ADVERTISEMENT PENDING")
 
     .setColor()
 
-    .setDescription("There is a GRP Session that has recently commenced! Sorry if you couldn't make it.")
+    .addField("**USER**", message.author)
 
-    .addField("**HOST**", message.author)
-
-    .addField("**STATUS**", "Commenced");
+    .addField("**ADVERTISEMENT DESCRIPTION**", rreason);
 
 
 
@@ -50,6 +48,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
 
-  name: "gcommenced"
+  name: "ad"
 
 }
